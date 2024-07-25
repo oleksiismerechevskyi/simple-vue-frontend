@@ -78,7 +78,7 @@ export default {
 
     const fetchPositions = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/v1/positions')  // Adjust the URL to your API endpoint
+        const response = await axios.get('http://2986536.mn550465.web.hosting-test.net/api/v1/positions')  // Adjust the URL to your API endpoint
         positions.value = response.data.positions.map(post => ({ id: post.id, name: post.name }))
       } catch (error) {
         console.error('Error fetching positions:', error)
@@ -99,12 +99,12 @@ export default {
         if ( VueCookies.get('token') ) {
             token = VueCookies.get('token')
         } else {
-            token = await axios.get(`http://localhost:3000/api/v1/token`)
+            token = await axios.get(`http://2986536.mn550465.web.hosting-test.net/api/v1/token`)
             token = token.data.token;
             VueCookies.set('token', token, "40m")
         }
 
-        const response = await axios.post('http://localhost:3000/api/v1/users', formData, {
+        const response = await axios.post('http://2986536.mn550465.web.hosting-test.net/api/v1/users', formData, {
         headers: {
         'Content-Type': 'multipart/form-data',
         'Token': token

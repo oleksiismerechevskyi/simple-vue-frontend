@@ -25,7 +25,7 @@ export default {
     const positions = ref([])
 
     const fetchPositions = async () => {
-      const response = await axios.get(`http://localhost:3000/api/v1/positions`)
+      const response = await axios.get(`http://2986536.mn550465.web.hosting-test.net/api/v1/positions`)
       positions.value = positions.value.concat(response.data.positions)
     }
 

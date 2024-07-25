@@ -28,7 +28,7 @@ export default {
         if ( VueCookies.get('token') ) {
             data = VueCookies.get('token')
         } else {
-            data = await axios.get(`http://localhost:3000/api/v1/token`)
+            data = await axios.get(`http://2986536.mn550465.web.hosting-test.net/api/v1/token`)
             data = data.data.token;
             VueCookies.set('token', data, "40m")
         }

@@ -20,7 +20,7 @@ export default {
       { text: 'Users', route: '/users' },
       { text: 'Positions', route: '/positions' },
       { text: 'Token', route: '/token' },
-      { text: 'Open API', redirect: 'http://localhost:3000/api/v1/documentation' },
+      { text: 'Open API', redirect: 'http://2986536.mn550465.web.hosting-test.net/api/v1/documentation' },
       { text: 'Create User', route: '/create-user' }
     ]
 

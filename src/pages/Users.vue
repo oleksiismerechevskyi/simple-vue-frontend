@@ -32,7 +32,7 @@ export default {
     const page = ref(1)
 
     const fetchUsers = async () => {
-      const response = await axios.get(`http://localhost:3000/api/v1/users?page=${page.value}&count=6`)
+      const response = await axios.get(`http://2986536.mn550465.web.hosting-test.net/api/v1/users?page=${page.value}&count=6`)
       if( response.data.links.next_url == null ) {
         page.value = undefined;
       }
